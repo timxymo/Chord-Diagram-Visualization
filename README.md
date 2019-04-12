@@ -187,5 +187,14 @@ pushViewport(viewport(x = 0.78, y = 0.3, width = grobWidth(lgd_col),
 grid.draw(lgd_col)
 upViewport()
 ```
-![alt text](https://github.com/timxymo/Chord-Diagram-Visualization/blob/master/GitHub%20no%20legend.jpeg?raw=true)
-There you have it! If you need higher res plot, just run the code in Console, and download the plot as JPEG or pdf. Good luck. 
+
+```R circlize_plot_dollar()``` will give the plot with no legend
+
+![alt text](https://github.com/timxymo/Chord-Diagram-Visualization/blob/master/no%20legend.png?raw=true)
+
+and the chunk from ```R plot.new()``` and below will display the plot with legend. Note that the legend position will be funky, you might want to adjust that in your view pane.
+
+![alt text](https://github.com/timxymo/Chord-Diagram-Visualization/blob/master/with%20legend.png?raw=true)
+
+There you have it! You can also add another legend for the ring color (if you're reading this, it should be pretty easy for you now). If you need higher res plot, just run the code in Console, and download the plot as JPEG or pdf.
+GOOD LUCK! 
