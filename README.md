@@ -1,8 +1,8 @@
 # Chord Diagram Visualization
-This tutorial is an expansion on how to create legends on the complex chord diagram, the manual of circlize package on R can be found [here](https://jokergoo.github.io/circlize_book/book/the-chorddiagram-function.html). Again, this tutorial will be very similar to what chapter 13-15 cover in the manual, but it doesn't have a thorough detail on how to create legends of the diagram shown below, as I found very frustrated. 
+This tutorial is an expansion on how to create legends on the complex chord diagram, the manual of circlize package on R can be found [here](https://jokergoo.github.io/circlize_book/book/the-chorddiagram-function.html). Again, this tutorial will be very similar to what chapter 13-15 cover in the manual, but it doesn't have a thorough detail on how to create legends of the diagram shown below, as I found very frustrated. I also notice people are going through the same stuggle as much as I do, mostly just don't know how to add the color to the color grid and add the corresponding number into the grid, so I thought I'd share the script. 
 ![alt text](https://jokergoo.github.io/circlize_book/book/15-a-complex-example-with-chord-diagram_files/figure-html/unnamed-chunk-13-1.png)
 # Instructions
-The R script will be uploaded and seperately, but you are welcomed to go through it in readme.md. Still learning how to perfect the diagram so comeback for updates. And if you know how to do this kind of visualization in Shiny, please point me to the right direction, thanks in advance.
+The R script is uploaded to the repository, but you are welcomed to go through it in readme.md. Still learning how to perfect the diagram so comeback for updates. And if you know how to do this kind of visualization in Shiny, please point me to the right direction, thanks in advance.
 
 ```R
 #install.packages("randomcoloR")
@@ -18,7 +18,7 @@ library(gridBase)
 library(circlize)
 library(chorddiag)
 ```
-These are the packages that I used, ComplexHeatmap has to be download through the commented lines since you can't find it in R packages. The other ones just have to install if you haven't already. Last package chorddiag actually allows to do hoverover and show information on links, however, the color isn't as nice, or organized by group. 
+These are the packages that I used, ComplexHeatmap has to be download through the commented lines since you can't find it in R packages. The other ones just have to install if you haven't already. Last package chorddiag actually allows to do hoverover and show information on links, however, the color isn't as nice, or organized by group (ALSO IF YOU KNOW HOW TO EMBED THE HTMLWIDGET INTO THE MD PLEASE LET ME KNOW, THANKS)
 ```R
 PI <- paste0(sample(LETTERS[1:10]),sample(LETTERS[1:10]),sample(LETTERS[1:10]))
 PI_department <- sample(rep(c("EN-CS","EN-CE","EN-ME","AS-Stat","AS-DS","MD-Neuroradiology","MD-Oncology"),3))[1:length(PI)]
