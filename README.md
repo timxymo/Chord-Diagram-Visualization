@@ -187,4 +187,5 @@ pushViewport(viewport(x = 0.78, y = 0.3, width = grobWidth(lgd_col),
 grid.draw(lgd_col)
 upViewport()
 ```
+![alt text](https://github.com/timxymo/Chord-Diagram-Visualization/blob/master/GitHub%20no%20legend.jpeg?raw=true)
 There you have it! If you need higher res plot, just run the code in Console, and download the plot as JPEG or pdf. Good luck. 
